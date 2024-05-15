@@ -12,25 +12,25 @@ If the user is new then create an account in sign-up page and the do the functio
 
 ## Features
 
-1. Manage activity lists.
-2. Add new activity.
-3. Delete activity once it done.
-4. Responsive design for mobile and desktop.
+- Manage activity lists.
+- Add new activity.
+- Delete activity once it done.
+- Responsive design for mobile and desktop.
 
 ## Technologies Used
 
-React.js: A JavaScript library for building user interfaces.
+- React.js: A JavaScript library for building user interfaces.
+- Tailwind CSS: A utility-first CSS framework for quickly styling web applications.
+- React Router: Declarative routing for React applications.
+- LocalStorage: A web storage API for storing data in a web browser.
 
-Tailwind CSS: A utility-first CSS framework for quickly styling web applications.
+## Getting Started
 
-React Router: Declarative routing for React applications.
+To get a local copy up and running follow these simple steps:
 
-LocalStorage: A web storage API for storing data in a web browser.
-
-## Setup Instructions
 ### Clone the repository
 
-    git clone https://github.com/your-username/activity-tracker-app.git
+    git clone https://github.com/aafrinshahas/actodo.git
 
 ### Navigate to the project directory:
 
@@ -44,11 +44,7 @@ LocalStorage: A web storage API for storing data in a web browser.
 
     npm start
 
-## Notes
+## Acknowledgements
 
-Activity data is stored locally in the browser's LocalStorage.
-
-React Router is used for navigation between different pages of the app.
-
-## Contributors
-Aafrin
+- Activity data is stored locally in the browser's LocalStorage.
+- React Router is used for navigation between different pages of the app.
