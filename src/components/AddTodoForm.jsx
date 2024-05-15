@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 function AddTodoForm(props){
     const activityArra = props.activityArra
@@ -8,12 +8,19 @@ const [newActivity, setnewActivity] = useState('');
 const [checkValue, setcheckValue] = useState(true)
 function handleChange(event){
 setnewActivity(event.target.value)
+// localStorage.setItem('activitylist', JSON.stringify(event.target.value))
 }
-
+// useEffect(()=>{
+//     let storageData = JSON.parse(localStorage.getItem('activitylist'));
+//     console.log(storageData)
+//     setactivityArra(storageData)
+// },[])
 function addActivity(){
     
    if(newActivity !== ''){
     setactivityArra([...activityArra, {id:activityArra.length+1, activity:newActivity}])
+    let data = [...activityArra, {id:activityArra.length+1, activity:newActivity}]
+    localStorage.setItem('activitylist', JSON.stringify(data))
     console.log('value is not empty');
     setcheckValue(true)
    }

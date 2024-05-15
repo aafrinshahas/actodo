@@ -1,9 +1,18 @@
 
+import { useEffect } from "react";
 import TodoItem from "./TodoItem";
 
 function TodoList(props){
 const activityArra = props.activityArra
 const setactivityArra = props.setactivityArra
+useEffect(()=>{
+    let data = localStorage.getItem('activitylist')
+    console.log(data)
+    if(data){
+        setactivityArra(JSON.parse(data))
+    }
+},[])
+
     return(
         <div className=' px-2 flex-grow'>
         <h1 className='text-2xl font-semibold'>Today's Activity</h1>
