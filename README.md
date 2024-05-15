@@ -28,21 +28,21 @@ React Router: Declarative routing for React applications.
 LocalStorage: A web storage API for storing data in a web browser.
 
 ## Setup Instructions
-1. Clone the repository:
+### Clone the repository
 
-git clone https://github.com/your-username/activity-tracker-app.git
+    git clone https://github.com/your-username/activity-tracker-app.git
 
-2. Navigate to the project directory:
+### Navigate to the project directory:
 
-cd activity-tracker-app
+    cd activity-tracker-app
 
-3. Install dependencies:
+### Install dependencies:
 
-npm install
+    npm install
 
-4. Start the development server:
+### Start the development server:
 
-npm start
+    npm start
 
 ## Notes
 
